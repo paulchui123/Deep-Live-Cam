@@ -35,7 +35,15 @@
 ![easysteps](https://github.com/user-attachments/assets/af825228-852c-411b-b787-ffd9aac72fc6)
 1. Select a face
 2. Select which camera to use
-3. Press live!
+```bash
+	•	在手机上安装一个 IP Camera 应用，例如：
+	•	Android: DroidCam
+2. 安装桌面客户端
+	•	下载并安装 DroidCam 的桌面客户端：
+	•	DroidCam for Windows/Linux
+	•	将手机通过 USB 连接到电脑，并启用调试模式。
+```
+4. Press live!
 
 ## Features & Uses - Everything is real-time
 
@@ -99,6 +107,12 @@ This is more likely to work on your computer but will be slower as it utilizes t
 -   pip
 -   git
 -   [ffmpeg](https://www.youtube.com/watch?v=OlNWCpFdVMA) - ```iex (irm ffmpeg.tc.ht)```
+-   
+```bash
+# 检查 FFmpeg 是否可用（优先检查自定义路径）
+    if FFMPEG_PATH and os.path.isfile(FFMPEG_PATH):
+        return True  # 手动路径可用
+```
 -   [Visual Studio 2022 Runtimes (Windows)](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
 
 **2. Clone the Repository**
